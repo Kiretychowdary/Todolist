@@ -11,7 +11,7 @@ const filters = document.querySelectorAll(".filter");
 
 let filter = '';
 let todosJson = [];
-const server = "http://localhost:3000";
+const server = "https://todolist-q4hm.onrender.com";
 
 window.onload = fetchTodos;
 
