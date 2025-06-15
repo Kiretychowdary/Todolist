@@ -7,10 +7,10 @@ const ListModel = require('./models/list');
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(express.static(__dirname)); // This serves script.js, styles.css, etc.
 
 // connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/nmkrspvlidata', {
+mongoose.connect('mongodb+srv://Kirety:ammaradha@ksvid.ls7dy.mongodb.net/?retryWrites=true&w=majority&appName=KSVID', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
